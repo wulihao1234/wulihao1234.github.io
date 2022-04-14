@@ -1,1 +1,89 @@
-<img src="https://img.alicdn.com/imgextra/i3/1810379498/O1CN01kV7M1h2K28aE2pIZk_!!1810379498.jpg" alt="1-01.jpg"/><img src="https://img.alicdn.com/imgextra/i3/1810379498/O1CN01kV7M1h2K28aE2pIZk_!!1810379498.jpg" alt="1-01.jpg"/>
+<!DOCTYPE html >
+< html  lang =" en " >
+  <头>
+    <元 字符集=" UTF-8 " />
+    < meta  http-equiv =" X-UA-兼容"内容=" IE=edge "/>
+    < meta  name =" viewport " content =" width=device-width, initial-scale=1.0 " />
+
+    <风格>
+      * {
+        box-sizing :边框框；
+        填充： 0；
+        边距： 0；
+      }
+      . 网格{
+        宽度： 100大众；
+        高度： 100 vh；
+        /* 示例核心 */
+        显示：网格；
+        放置项目：中心；
+
+        背景色： hsl ( 0 ,  0 % ,  20 % );
+      }
+
+      . 内容{
+        字体大小： 8 rem；
+
+        边框： 1 px实心hsl（120度， 60 %， 70 %）；
+        边框半径： 4 px；
+        box-shadow :  0  0  24 px  hsl ( 120度,  60 % ,  80 % );
+        /* 背景：继承；*/
+        填充： 10雷姆；
+
+        位置：相对；
+        z-index :  100 ;
+        网格面积： 1  /  1  /  2  /  2；
+      }
+
+      . 描述{
+        颜色：白色；
+        字体系列：无衬线；
+        背景色： hsl ( 0 ,  0 % ,  20 % );
+
+        填充： 4像素 12像素；
+
+        网格面积： 1  /  1  /  2  /  2；
+        z-index ： 120；
+      }
+
+      . 网格::之前,
+      . 网格:: {之后
+        显示：块；
+        内容： “”；
+        宽度： 100 %；
+        高度： 4像素；
+        背景： 线性渐变（
+          45度,
+          hsl ( 0度 100 %  65 % ) ,
+          hsl ( 228度 100 %  52 % )
+        );
+        位置：绝对；
+      }
+
+      . 网格:: {之前
+        左： 0；
+        最高： 50 vh；
+      }
+
+      . 网格:: {之后
+        背景： 线性渐变（
+          45度,
+          hsl ( 210度 100 %  51 % ) ,
+          hsl ( 109度 100 %  50 % )
+        );
+        宽度： 4像素；
+        高度： 100 %；
+        左： 50大众；
+        顶部： 0；
+      }
+    </风格>
+
+    <title>Grid 布局简化居中方式</title>
+  </头>
+  <身体>
+    < div 类=“网格” >
+      < div 类=“内容” > 😊 </ div >
+      < div  class =" desc " > place-items: center </ div >
+    </ div >
+  </正文>
+</ html >
